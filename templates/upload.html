@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload CSV</title>
+</head>
+<body>
+    <h1>Upload a CSV file</h1>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="csv_file">
+        <br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
